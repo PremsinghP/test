@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.min.js"></script>
+	<title>Resume Template Website</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Resume Template Generator</h1>
+		<form>
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name">
+
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email">
+
+			<label for="phone">Phone</label>
+			<input type="tel" id="phone" name="phone">
+
+			<label for="address">Address</label>
+			<input type="text" id="address" name="address">
+
+			<label for="summary">Summary</label>
+			<textarea id="summary" name="summary"></textarea>
+
+			<label for="experience">Experience</label>
+			<textarea id="experience" name="experience"></textarea>
+
+			<label for="education">Education</label>
+			<textarea id="education" name="education"></textarea>
+
+			<input type="button" value="Generate Resume" onclick="generateResume()">
+		</form>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
